@@ -38,7 +38,7 @@ class FormModel extends BaseFormModel
 		$this->LastName = new Field( FieldType::NAME, 			false);
 		$this->Email = new Field( FieldType::EMAIL, 			true);
 		$this->Address = new Field( FieldType::ADDRESS, 		false);
-		$this->City =  new Field( FieldType::NAME, 				false);
+		$this->City =  new Field( FieldType::CITY_NAME, 		false);
 		$this->PostalCode = new Field( FieldType::POSTAL_CODE, 	false);
 		$this->Age  = new Field( FieldType::POSITIVE_INTEGER, 	true);
 		$this->Lunch = new Field( FieldType::BOOLEAN, 			true);
