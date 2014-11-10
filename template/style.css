@@ -1,0 +1,229 @@
+@font-face {
+    font-family:lithos-pro-regular;
+    src: url(fonts/lithos-pro-regular.ttf);
+	font-weight:bold;
+}
+
+@font-face {
+    font-family:liberation-sans;
+    src: url(fonts/liberation-sans-regular.ttf);
+}
+
+@font-face {
+    font-family:liberation-sans-bold; 
+	src: url(fonts/liberation-sans-bold.ttf);
+}
+
+@font-face {
+    font-family:liberation-sans-italic; 
+	src: url(fonts/liberation-sans-italic.ttf);
+}
+
+@font-face {
+    font-family:liberation-sans-bold-italic; 
+	src: url(fonts/liberation-sans-bold-italic.ttf);
+}
+
+body {
+	background-color: #cbd6f8;
+	color:black;
+	min-width:375px;
+}
+
+div.MainPageWrapper{
+	background-color: inherit;
+	width:76%;
+	min-width:818px;
+	height:100%;
+	display:table;
+	min-height:300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:-10px;
+	margin-bottom:0px;
+	box-shadow: 0px 5px 20px #888888;
+}
+
+div.Logo 
+{
+	background-image: url("images/logo-bg.png");
+	background-size: 100% auto;
+	background-position:center center;
+	background-color: #fff;
+	height:200px;
+	width:100%;
+	margin:0px 0px 0px 0px;
+}
+
+div.InnerLogo
+{
+	background-image: url("images/logo-tulen.png");
+	background-size: 100% 100%;
+	background-position:center center;
+	background-color:transparent;
+	height:180px;
+	width:213px;
+	margin-top:10px;
+	margin-right:20px;
+	position:relative;
+	float:right;
+}
+
+div.LogoText
+{
+	font-family:lithos-pro-regular;
+	position:relative;
+	top:50px;
+	left:70px;
+	color:#fff;
+	font-size:60px;
+	text-shadow: 
+	1px 1px 0 #53639f,
+    -1px 1px 0 #53639f,
+    1px -1px 0 #53639f,
+    -1px -1px 0 #53639f,
+    0px 1px 0 #53639f,
+    0px -1px 0 #53639f,
+    -1px 0px 0 #53639f,
+    1px 0px 0 #53639f,
+    2px 2px 0 #53639f,
+    -2px 2px 0 #53639f,
+    2px -2px 0 #53639f,
+    -2px -2px 0 #53639f,
+    0px 2px 0 #53639f,
+    0px -2px 0 #53639f,
+    -2px 0px 0 #53639f,
+    2px 0px 0 #53639f,
+    1px 2px 0 #53639f,
+    -1px 2px 0 #53639f,
+    1px -2px 0 #53639f,
+    -1px -2px 0 #53639f,
+    2px 1px 0 #53639f,
+    -2px 1px 0 #53639f,
+    2px -1px 0 #53639f,
+    -2px -1px 0 #53639f;
+}
+
+nav.MainMenu 
+{
+	background-image: url("images/menu-bar.png");
+	background-repeat: repeat;
+	background-color: #25f;
+	color:#fff;
+	width:auto;
+	max-width:100%;
+	min-height:47px;
+	height:auto;
+	overflow:auto;
+	margin:0px 0px 0px 0px;
+}
+
+section.PageContent {
+	color:#414a6d;
+	background-color: #bfccf5;
+	width:inherit;
+	width:100%;
+	min-height:200px;
+	height:auto;
+	margin:0px 0px 0px 0px;
+	padding-top:5px;
+	overflow:auto;
+}
+
+div.ContentWrapper {
+	padding-top:0px;
+	padding-left:60px;
+	padding-bottom:20px;
+	padding-right:10px;
+	overflow:auto;
+	color:#000;
+}
+
+.PageTitle {
+	color:#343f68;
+	margin-top:40px;
+	margin-bottom:30px;
+	margin-left:10%;
+	margin-right:10%;
+	text-align:center;
+	font-family:liberation-sans-bold-italic;
+	font-style:italic;
+	font-variant:small-caps;
+	width:80%;
+}
+
+.PageTitle h1 {
+	margin: 5px 0px 5px 0px;
+	font-size:32px;
+}
+
+.PageTitle h2 {
+	margin: 5px 0px 5px 0px;
+	font-size:20px;
+}
+
+
+input[type="number"] {
+   width:50px;
+}
+
+ul.MenuList {
+	width:auto;
+	height:auto;
+	margin-left: auto ;
+ 	margin-right: auto ;
+	margin-top:0px;
+	margin-bottom:0px;
+	display:table;
+	padding:0px 0px 0px 0px;
+}
+
+li.MenuItem {
+	position:relative;
+	float:left;
+	height:37px;
+	width:160px;
+	text-align:center;
+	padding-top:13px;
+	border-left: 1px solid #53639f;
+	border-right: 1px solid #53639f;
+	list-style-type:none;
+}
+
+li.Selected
+{
+	background-image: url("images/menu-selected.png");
+	background-color: #aaf;
+}
+
+li.Selected a
+{
+	color:#53639f;
+}
+
+a.MenuLink 
+{
+	text-decoration: none;
+	font-size:21px;
+	color:#fff;
+	font-family:liberation-sans-bold;
+	font-variant:small-caps;
+}
+
+footer {
+	color:#7a89c3;
+	padding-top:10px;
+	text-align:center;
+}
+
+footer a{
+	color:#3d4461;
+}
+
+.Error {
+	color:#800;
+}
+
+.Success {
+	color:#080;
+}
