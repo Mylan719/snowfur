@@ -129,7 +129,7 @@ if($formFilled)
 						<ul class="RegistrationForm">
 							<li><label>Prezyvka:</label>	<input name="Nickname" type="text" maxlength="50" /></li>
 							<li><label>Meno:</label>		<input name="FirstName" type="text" maxlength="50" /></li>
-							<li><label>Priezvysko:</label>	<input name="LastName" type="text" maxlength="50" /></li>
+							<li><label>Priezvisko:</label>	<input name="LastName" type="text" maxlength="50" /></li>
 							<li><label>E-mail:</label>		<input name="Email" type="text" maxlength="50" /></li>
 							<li><label>Adresa:</label>		<input name="Address" type="text" maxlength="100" /></li>
 							<li><label>Mesto:</label>		<input name="City" type="text" maxlength="50" /></li>
