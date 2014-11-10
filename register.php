@@ -145,7 +145,7 @@ if($formFilled)
 			</section>
 		</div>
 		<footer>
-			♥2014 - dielo je uverejnené pod licenciou <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA</a>.<br />
+			♥2014 - dielo je uverejnené pod licenciou <a href="http://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a>.<br />
 			Grafika: Blue Horsewolf, Azshara Kletete.
 			Web: Mlpard, Kiraa Corsac.
 			Obsah: Greyfur.
