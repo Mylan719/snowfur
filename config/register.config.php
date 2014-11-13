@@ -1,10 +1,4 @@
 <?php
-class ReCaptchaKeyring
-{
-	const PUBLIC_KEY = 'zmenma';
-	const PRIVATE_KEY = 'zmenma';
-}
-
 class RegistrationModel
 {
 	public $Nickname;
@@ -33,7 +27,7 @@ class FormModel extends BaseFormModel
 	function __construct() 
 	{
 		//                              type       		  	isRequired
-		$this->Nickname = new Field( FieldType::NAME, 			true);
+		$this->Nickname = new Field( FieldType::NICKNAME, 			true);
 	 	$this->FirstName = new Field( FieldType::NAME, 			false);
 		$this->LastName = new Field( FieldType::NAME, 			false);
 		$this->Email = new Field( FieldType::EMAIL, 			true);

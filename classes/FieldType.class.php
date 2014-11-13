@@ -10,7 +10,8 @@ class FieldType
 	const NAME = '^[\p{L} \-]+$';
 	const EMAIL = '^[\w-\.]+@(?:[\w-]+\.)+[\w-]{2,4}$';
 	const PHONE = '^(?:00|\+)\d{12}$|^09\d{8}$|^(?:60|7[2379])\d{7}$';
-	const CITY_NAME = '^[\p{L} \/\-_]+$';
+	const CITY_NAME = '^[\p{L} \/\-]+$';
+	const NICKNAME = '^[\p{L}\d \-]+$';
 
 	const CUSTOM = 'CUSTOM';
 }

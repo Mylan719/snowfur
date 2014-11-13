@@ -1,5 +1,6 @@
 <?php
 require("libs/phpmailer/PHPMailerAutoload.php");
+require('libs/recaptchalib.php');
 
 require("classes/ValidationResult.class.php");
 require("classes/FieldType.class.php");
@@ -8,8 +9,8 @@ require("classes/BaseFormModel.class.php");
 require("classes/CvsExporter.class.php");
 require("classes/Mailer.class.php");
 
-require('libs/recaptchalib.php');
-require('register.config.php');
+require('config/register.config.php');
+require('config/keyrings.config.php');
 
 //Recaptcha
 $recaptchaAnswer = recaptcha_check_answer (ReCaptchaKeyring::PRIVATE_KEY,

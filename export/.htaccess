@@ -12,5 +12,10 @@ Order Allow,Deny
 Deny from all
 </Files>
 
+<Files "participants-*.csv">
+Order Allow,Deny
+Deny from all
+</Files>
+
 # Disable directory browsing
 Options All -Indexes
