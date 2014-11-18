@@ -5,6 +5,34 @@
 		<link href="template/style.css" type="text/css" rel="stylesheet"/>
 		<link href="template/index.css" type="text/css" rel="stylesheet"/>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUhc2UB6C3ekQ9KFoMt1VpJpZ0MNxiil0&sensor=false">
+		</script>
+		<script type="text/javascript">
+		  function initialize() {
+			var myLatlng = new google.maps.LatLng(49.110396, 18.893355);
+
+			var mapOptions = {
+			  	zoom: 10,
+			  	center: myLatlng,
+			  	scrollwheel: false,
+				navigationControl: false,
+				mapTypeControl: true,
+				scaleControl: false,
+				draggable: false,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+
+			var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+
+			// To add the marker to the map, use the 'map' property
+			var marker = new google.maps.Marker({
+				position: myLatlng,
+				map: map,
+				title:"Chata Lesník."
+			});
+		  }
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
 	</head>
 	<body>
 		<div class="MainPageWrapper">
@@ -34,13 +62,21 @@
 				<div class="ContentWrapper">
 					<p>Máme za sebou 5 úspešných ročníkov, počas ktorých sme sa rozrástli z 15 na skoro 40 účastníkov. Minulý rok nám síce moc počasie neprialo, ale dúfame, že tento rok budeme mať opäť sneh.</p>
 					<p>Už ročník 2013 sa presťahoval do Martina, do chaty Lesník. Keďže nám veľkosť a priestory chaty vyhovujú, rozhodli sme sa aj tento ročník usporiadať v tomto zariadení. Blízko je ako do miest Martin-Vrútky, tak aj do lesa a prírody.  V prízemnej časti sa nachádza spoločenská miestnosť, jedáleň a bar s celodennou prevádzkou a miestnosť na stolný tenis, na poschodí bude ako po minulé roky miestnosť s DDR.</p>
+					<h3>Základné informácie</h3>
+					<div id="map-canvas" class="GoogleMap">
+					</div>
+					<b>Termín</b>
+					<p>30.1.2015 - 2.2.2015</p>
+					<b>Miesto</b>
+					<p>Martin, chata Lesník <br />GPS: 49.11042, 18.89346</p>
+					<b>Aktivity v okolí</b>
 					<p>V blízkosti sa nachádzajú tri významné lyžiarske strediská:</p>
 					<ul class="SkiCenterList">
 						<li><b>Martinské Hole</b> - 9km autom alebo sedačkovou lanovkou, 5 vlekov so zjazdovkami aj pre náročnejších lyžiarov a snowboardový park.</li>
 						<li><b>Jasenská dolina</b> - 14km autom, 4 vleky, umelé zasnežovanie.</li>
 						<li><b>Snowland Valčianska dolina</b> - 16km, 3 vleky a snowboardová dráha.</li>
-					</ul>
-					<p>Necelých 30km od chaty sa nachádza aj známe termálne kúpalisko Bešeňová, ku ktorému je prístup možný aj autobusom. K dispozícií je vlastné parkovisko.</p> 
+					</ul>	
+					<p>Necelých 30km od chaty sa nachádza aj známe termálne kúpalisko Bešeňová, ku ktorému je prístup možný aj autobusom. K dispozícií je vlastné parkovisko.</p>
 				</div>
 			</section>
 		</div>
